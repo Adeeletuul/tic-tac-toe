@@ -1,0 +1,9 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url('ArtBook-gx4w5.ttf');
+}
+
+h1{
+    font-size: 72px;
+    font-family: myFirstFont;
+}
