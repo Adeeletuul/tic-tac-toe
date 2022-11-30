@@ -1,9 +1,103 @@
-@font-face {
-  font-family: myFirstFont;
-  src: url('ArtBook-gx4w5.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
 }
 
-h1{
-    font-size: 72px;
-    font-family: myFirstFont;
+body{
+    height: 100vh;
+    background-color: rgb(237, 234, 234);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Prompt', sans-serif;
+    text-transform: uppercase;
+}
+
+#first-word{
+    color:#FFD900
+}
+
+#second-word {
+    color: #05CCAB
+}
+
+#three-word {
+    color: #FB6B23;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gamePlayer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+.gamePlayer>label {
+    flex: 1;
+}
+
+.gamePlayer>label{
+    text-align: end;
+    margin-right: 10px;
+    flex: 1;
+}
+
+
+
+#startButton,
+#resetButton{
+    background-color: rgb(97, 97, 179);
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: 107px 107px 107px;
+    grid-template-rows: 107px 107px 107px;
+    background-color: #33383F;
+    padding: 50px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+}
+
+.square{
+    background-color: #06EFC8;
+    color: #FFD900;
+    width: 100px;
+    height: 100px;
+    border: 10px solid #05CCAB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

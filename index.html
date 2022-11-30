@@ -1,16 +1,40 @@
 <html>
-
-<head>
+  <head>
     <title>TIC TAC TOE</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js" defer></script>
-    <meta charset="utf-8">
-</head>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script defer src="scripts/script.js"></script>
+    <meta charset="utf-8" />
+  </head>
 
-<body>
-    <h1>Tic Tac Toe</h1>
-    <button id="startButton">Start Game</button>
-    <div class="grid"></div>
-</body>
-
+  <body>
+    <section id="content">
+      <h1 id="gameTitle">
+        <span id="first-word">Tic</span> <span id="second-word">Tac</span>
+        <span id="three-word">Toe</span>
+      </h1>
+      <form id="startGameForm">
+        <div class="gamePlayer">
+          <label for="playerOne">First player name:</label>
+          <input
+            type="text"
+            id="playerOne"
+            name="playerOne"
+            placeholder="Please enter your name..."
+          />
+        </div>
+        <div class="gamePlayer">
+          <label for="playerSecond">Second player name:</label>
+          <input
+            type="text"
+            id="playerSecond"
+            name="playerSecond"
+            placeholder="Please enter your name..."
+          />
+        </div>
+        <div>
+          <button id="startButton">Start Game</button>
+        </div>
+      </form>
+    </section>
+  </body>
 </html>
